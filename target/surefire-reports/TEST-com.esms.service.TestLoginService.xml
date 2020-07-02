@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.esms.service.TestLoginService" time="0.063" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/voper/Desktop/ssm_esms"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/voper/Desktop/ssm_esms"/>
+    <property name="java.runtime.version" value="1.8.0_252-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.3.0-3-amd64"/>
+    <property name="user.home" value="/home/voper"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="voper"/>
+    <property name="java.class.path" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/opt/idea-IU-201.7223.91/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/voper/.jdks/corretto-1.8.0_252/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1.2 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="idea.version2020.1.2" value="true"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="java.ext.dirs" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/resources.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/rt.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/sunrsasign.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jsse.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jce.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/charsets.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jfr.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/classes"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.esms.service.TestLoginService" name="testFindSystemManagerByIdAndPassword" time="0.044"/>
+  <testcase classname="com.esms.service.TestLoginService" name="testFindEmployeeByIdAndPassword" time="0.019">
+    <error message="工号或密码错误" type="com.esms.exception.CustomException">com.esms.exception.CustomException: 工号或密码错误
+	at com.esms.service.impl.LoginServiceImpl.findEmployeeByIdAndPassword(LoginServiceImpl.java:37)
+	at com.esms.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$694368f4.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656)
+	at com.esms.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$1d34b5d5.findEmployeeByIdAndPassword(&lt;generated&gt;)
+	at com.esms.service.TestLoginService.testFindEmployeeByIdAndPassword(TestLoginService.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>DEBUG [main] - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.esms.service.TestLoginService]
+DEBUG [main] - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.esms.service.TestLoginService]
+DEBUG [main] - Performing dependency injection for test context [[DefaultTestContext@76c548f testClass = TestLoginService, testInstance = com.esms.service.TestLoginService@7c1812b3, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3900fa71 testClass = TestLoginService, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+DEBUG [main] - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3900fa71 testClass = TestLoginService, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+DEBUG [main] - Spring test ApplicationContext cache statistics: [DefaultContextCache@588ffeb size = 2, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 2]
+DEBUG [main] - Processing injected element of bean &apos;com.esms.service.TestLoginService&apos;: AutowiredFieldElement for private com.esms.service.impl.LoginServiceImpl com.esms.service.TestLoginService.loginService
+DEBUG [main] - Returning cached instance of singleton bean &apos;loginServiceImpl&apos;
+DEBUG [main] - Before test method: context [DefaultTestContext@76c548f testClass = TestLoginService, testInstance = com.esms.service.TestLoginService@7c1812b3, testMethod = testFindEmployeeByIdAndPassword@TestLoginService, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3900fa71 testClass = TestLoginService, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG [main] - Creating a new SqlSession
+DEBUG [main] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43034809]
+DEBUG [main] - Fetching JDBC Connection from DataSource
+DEBUG [main] - trace com.mchange.v2.resourcepool.BasicResourcePool@3d36dff4 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5a6ec285)
+DEBUG [main] - Registering transaction synchronization for JDBC Connection
+DEBUG [main] - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@12aa4996] will be managed by Spring
+DEBUG [main] - ==&gt;  Preparing: select * from employee where e_account = ? and e_password = ? and e_isdel = ? 
+DEBUG [main] - ==&gt; Parameters: 1(String), 9CA994662145DB1CE24D605B117E0CE7(String), 1(Integer)
+DEBUG [main] - &lt;==      Total: 0
+DEBUG [main] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43034809]
+DEBUG [main] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43034809]
+DEBUG [main] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43034809]
+DEBUG [main] - Returning JDBC Connection to DataSource
+DEBUG [main] - trace com.mchange.v2.resourcepool.BasicResourcePool@3d36dff4 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5a6ec285)
+DEBUG [main] - After test method: context [DefaultTestContext@76c548f testClass = TestLoginService, testInstance = com.esms.service.TestLoginService@7c1812b3, testMethod = testFindEmployeeByIdAndPassword@TestLoginService, testException = com.esms.exception.CustomException: 工号或密码错误, mergedContextConfiguration = [MergedContextConfiguration@3900fa71 testClass = TestLoginService, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+  </testcase>
+</testsuite>

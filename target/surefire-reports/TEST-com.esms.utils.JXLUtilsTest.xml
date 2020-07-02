@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.esms.utils.JXLUtilsTest" time="0.075" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/voper/Desktop/ssm_esms"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/voper/Desktop/ssm_esms"/>
+    <property name="java.runtime.version" value="1.8.0_252-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.3.0-3-amd64"/>
+    <property name="user.home" value="/home/voper"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="voper"/>
+    <property name="java.class.path" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/opt/idea-IU-201.7223.91/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/voper/.jdks/corretto-1.8.0_252/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1.2 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="idea.version2020.1.2" value="true"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="java.ext.dirs" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/voper/.jdks/corretto-1.8.0_252/jre/lib/resources.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/rt.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/sunrsasign.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jsse.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jce.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/charsets.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/lib/jfr.jar:/home/voper/.jdks/corretto-1.8.0_252/jre/classes"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="/opt/idea-IU-201.7223.91/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.esms.utils.JXLUtilsTest" name="readMonthlyAttendanceTest" time="0.053">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.esms.utils.JXLUtils.readMonthlyAttendanceTable(JXLUtils.java:34)
+	at com.esms.utils.JXLUtilsTest.readMonthlyAttendanceTest(JXLUtilsTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>DEBUG [main] - After test class: context [DefaultTestContext@544fe44c testClass = TestLoginController, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@31610302 testClass = TestLoginController, locations = &apos;{classpath:applicationContext.xml, classpath:springmvc-servlet.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], resourceBasePath = &apos;src/main/webapp&apos;, contextLoader = &apos;org.springframework.test.context.web.WebDelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG [main] - SpringJUnit4ClassRunner constructor called with [class com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+DEBUG [main] - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+DEBUG [main] - Instantiating TestContextBootstrapper for test class [com.esms.utils.JXLUtilsTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+DEBUG [main] - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@66bfd864 declaringClass = &apos;com.esms.utils.JXLUtilsTest&apos;, classes = &apos;{}&apos;, locations = &apos;{classpath:applicationContext.xml}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+DEBUG [main] - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - @TestExecutionListeners is not present for class [com.esms.utils.JXLUtilsTest]: using defaults.
+ INFO [main] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+ INFO [main] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f973499, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d33940d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43cf6ea3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@37c5fc56, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c025cb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50825a02]
+DEBUG [main] - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Before test class: context [DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+DEBUG [main] - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Performing dependency injection for test context [[DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@7051777c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+DEBUG [main] - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+DEBUG [main] - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+DEBUG [main] - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG [main] - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG [main] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+ INFO [main] - Loading XML bean definitions from class path resource [applicationContext.xml]
+DEBUG [main] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+DEBUG [main] - Loading schema mappings from [META-INF/spring.schemas]
+DEBUG [main] - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd}
+DEBUG [main] - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+DEBUG [main] - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.3.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+DEBUG [main] - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+DEBUG [main] - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-4.3.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.3.xsd
+DEBUG [main] - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-4.3.xsd] in classpath: org/springframework/aop/config/spring-aop-4.3.xsd
+DEBUG [main] - Loading bean definitions
+DEBUG [main] - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+DEBUG [main] - Resolved classpath location [com/esms/] to resources [URL [file:/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/], URL [file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/]]
+DEBUG [main] - Looking for matching resources in directory tree [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/controller] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/service] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/utils] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/**/*.class]
+DEBUG [main] - Looking for matching resources in directory tree [/home/voper/Desktop/ssm_esms/target/classes/com/esms]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/exception] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/interceptor] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/utils] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/**/*.class]
+DEBUG [main] - Resolved location pattern [classpath*:com/esms/**/*.class] to resources [file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/controller/TestLoginController.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EchartTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeCustomVoTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/KeyValueTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MonthlyAttendanceCustomVoTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MothlyAttendanceTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/SalaryTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/service/EchartsServiceTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/service/MonthlyAttendanceCustomVoTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/service/SalaryServiceTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/service/TestLoginService.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/utils/JXLUtilsTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/utils/MD5UtilsTest.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/DepartmentController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/DownloadExcelController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/EchartsController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/EmployeeController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/ImportDataController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/KeyValueController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/LoginController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/MonthlyAttendanceController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/PositionController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/RankBonusController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/SalaryController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/UploadPhotoController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/UserInforController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/controller/WorkYearController.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/DepartmentMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeCustomVoMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/KeyValueMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceCustomVoMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/PositionMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/RankBonusMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SalaryMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SystemManagerMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/WorkingYearsBonusMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/exception/CustomException.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/exception/CustomExceptionResolver.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/interceptor/LoginInterceptor.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/interceptor/PermissionInterceptor.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Department.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Employee.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/KeyValue.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/MonthlyAttendance.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Position.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/RankBonus.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Salary.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/SystemManager.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/WorkingYearsBonus.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/DepartmentService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/EmployeeService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IDownloadExcelService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IEchartsService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IImportDataService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IKeyValueService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/ILoginService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IMonthlyAttendanceService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IRankBonusService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/ISalaryService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IUserInforService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/IWorkYearService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/PositionService.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/DepartmentServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/DownloadExcelServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/EchartsServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/EmployeeServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/ImportDataServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/KeyValueServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/LoginServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/MonthlyAttendanceServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/PositionServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/RankBonusServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/SalaryServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/UserInforServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/WorkYearServiceImpl.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/utils/CaptchaUtil.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/utils/JXLUtils.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/utils/MD5Utils.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/utils/PageUtils.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/DepartmentPages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EchDepartmentSalary.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EchEmployeeNums.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EchMonthSalary.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EchSalary.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EchSalaryPercent.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EmployeeCustomVo.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EmployeeMonthlyAttendancePages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EmployeePages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/EmployeeSalaryVO.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/MonthlyAttendanceCustomVo.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/MonthlyAttendancePages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/PositionPages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/RankBonusPages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/SalaryPages.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/vo/WokingYearsBonusPages.class]]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/DepartmentServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/DownloadExcelServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/EchartsServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/EmployeeServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/ImportDataServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/KeyValueServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/LoginServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/MonthlyAttendanceServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/PositionServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/RankBonusServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/SalaryServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/UserInforServiceImpl.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/service/impl/WorkYearServiceImpl.class]
+DEBUG [main] - Neither XML &apos;id&apos; nor &apos;name&apos; specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+DEBUG [main] - Neither XML &apos;id&apos; nor &apos;name&apos; specified - using generated bean name [com.esms.exception.CustomExceptionResolver#0]
+DEBUG [main] - Loaded 30 bean definitions from location pattern [classpath:applicationContext.xml]
+ INFO [main] - Refreshing org.springframework.context.support.GenericApplicationContext@3241713e: startup date [Wed Jun 17 23:37:25 GMT+08:00 2020]; root of context hierarchy
+DEBUG [main] - Bean factory for org.springframework.context.support.GenericApplicationContext@3241713e: org.springframework.beans.factory.support.DefaultListableBeanFactory@489543a6: defining beans [departmentServiceImpl,downloadExcelServiceImpl,echartsServiceImpl,employeeServiceImpl,importDataServiceImpl,keyValueServiceImpl,loginServiceImpl,monthlyAttendanceServiceImpl,positionServiceImpl,rankBonusService,salaryServiceImpl,userInforServiceImpl,workYearServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,pooledDataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,sqlSession,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,txPoint,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,com.esms.exception.CustomExceptionResolver#0]; root of factory hierarchy
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+DEBUG [main] - Creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos; to allow for resolving potential circular references
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+DEBUG [main] - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG [main] - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG [main] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG [main] - Resolved classpath location [com/esms/dao/] to resources [URL [file:/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/], URL [file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/]]
+DEBUG [main] - Looking for matching resources in directory tree [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao] for files matching pattern [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/**/*.class]
+DEBUG [main] - Looking for matching resources in directory tree [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/**/*.class]
+DEBUG [main] - Resolved location pattern [classpath*:com/esms/dao/**/*.class] to resources [file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EchartTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeCustomVoTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/KeyValueTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MonthlyAttendanceCustomVoTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MothlyAttendanceTest.class], file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/SalaryTest.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/DepartmentMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeCustomVoMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/KeyValueMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceCustomVoMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/PositionMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/RankBonusMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SalaryMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SystemManagerMapper.class], file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/WorkingYearsBonusMapper.class]]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EchartTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeCustomVoTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/EmployeeTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/KeyValueTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MonthlyAttendanceCustomVoTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/MothlyAttendanceTest.class]
+DEBUG [main] - Ignored because not a concrete top-level class: file [/home/voper/Desktop/ssm_esms/target/test-classes/com/esms/dao/SalaryTest.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/DepartmentMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeCustomVoMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/EmployeeMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/KeyValueMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceCustomVoMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/MonthlyAttendanceMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/PositionMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/RankBonusMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SalaryMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/SystemManagerMapper.class]
+DEBUG [main] - Identified candidate component class: file [/home/voper/Desktop/ssm_esms/target/classes/com/esms/dao/WorkingYearsBonusMapper.class]
+DEBUG [main] - Creating MapperFactoryBean with name &apos;departmentMapper&apos; and &apos;com.esms.dao.DepartmentMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;employeeCustomVoMapper&apos; and &apos;com.esms.dao.EmployeeCustomVoMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;employeeMapper&apos; and &apos;com.esms.dao.EmployeeMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;keyValueMapper&apos; and &apos;com.esms.dao.KeyValueMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;monthlyAttendanceCustomVoMapper&apos; and &apos;com.esms.dao.MonthlyAttendanceCustomVoMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;monthlyAttendanceMapper&apos; and &apos;com.esms.dao.MonthlyAttendanceMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;positionMapper&apos; and &apos;com.esms.dao.PositionMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;rankBonusMapper&apos; and &apos;com.esms.dao.RankBonusMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;salaryMapper&apos; and &apos;com.esms.dao.SalaryMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;systemManagerMapper&apos; and &apos;com.esms.dao.SystemManagerMapper&apos; mapperInterface
+DEBUG [main] - Creating MapperFactoryBean with name &apos;workingYearsBonusMapper&apos; and &apos;com.esms.dao.WorkingYearsBonusMapper&apos; mapperInterface
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+DEBUG [main] - Adding [environmentProperties] PropertySource with lowest search precedence
+DEBUG [main] - Loading properties file from class path resource [dbconfig.properties]
+DEBUG [main] - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG [main] - Could not find key &apos;jdbc.jdbcUrl&apos; in any property source
+DEBUG [main] - Found key &apos;jdbc.jdbcUrl&apos; in [localProperties] with type [String]
+DEBUG [main] - Could not find key &apos;jdbc.driverClass&apos; in any property source
+DEBUG [main] - Found key &apos;jdbc.driverClass&apos; in [localProperties] with type [String]
+DEBUG [main] - Could not find key &apos;jdbc.user&apos; in any property source
+DEBUG [main] - Found key &apos;jdbc.user&apos; in [localProperties] with type [String]
+DEBUG [main] - Could not find key &apos;jdbc.password&apos; in any property source
+DEBUG [main] - Found key &apos;jdbc.password&apos; in [localProperties] with type [String]
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos; to allow for resolving potential circular references
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+DEBUG [main] - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@ccd1bc3]
+DEBUG [main] - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@878537d]
+DEBUG [main] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@489543a6: defining beans [departmentServiceImpl,downloadExcelServiceImpl,echartsServiceImpl,employeeServiceImpl,importDataServiceImpl,keyValueServiceImpl,loginServiceImpl,monthlyAttendanceServiceImpl,positionServiceImpl,rankBonusService,salaryServiceImpl,userInforServiceImpl,workYearServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,pooledDataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,sqlSession,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,txPoint,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,com.esms.exception.CustomExceptionResolver#0,departmentMapper,employeeCustomVoMapper,employeeMapper,keyValueMapper,monthlyAttendanceCustomVoMapper,monthlyAttendanceMapper,positionMapper,rankBonusMapper,salaryMapper,systemManagerMapper,workingYearsBonusMapper]; root of factory hierarchy
+DEBUG [main] - Creating shared instance of singleton bean &apos;departmentServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;departmentServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos; to allow for resolving potential circular references
+DEBUG [main] - Creating instance of bean &apos;txPoint&apos;
+DEBUG [main] - Finished creating instance of bean &apos;txPoint&apos;
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.DepartmentServiceImpl]: AutowiredFieldElement for public com.esms.dao.DepartmentMapper com.esms.service.impl.DepartmentServiceImpl.departmentMapper
+DEBUG [main] - Eagerly caching bean &apos;departmentServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;departmentServiceImpl&apos;: AutowiredFieldElement for public com.esms.dao.DepartmentMapper com.esms.service.impl.DepartmentServiceImpl.departmentMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;departmentMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;departmentMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Creating shared instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Creating instance of bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;sqlSessionFactory&apos; to allow for resolving potential circular references
+DEBUG [main] - Creating shared instance of singleton bean &apos;pooledDataSource&apos;
+DEBUG [main] - Creating instance of bean &apos;pooledDataSource&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxaa1i32nze1vdfjjk|15923407] registered.
+DEBUG [main] - Eagerly caching bean &apos;pooledDataSource&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;pooledDataSource&apos;
+DEBUG [main] - Looking for matching resources in directory tree [/home/voper/Desktop/ssm_esms/target/classes/mappers]
+DEBUG [main] - Searching directory [/home/voper/Desktop/ssm_esms/target/classes/mappers] for files matching pattern [/home/voper/Desktop/ssm_esms/target/classes/mappers/*.xml]
+DEBUG [main] - Resolved location pattern [classpath:mappers/*.xml] to resources [file [/home/voper/Desktop/ssm_esms/target/classes/mappers/DepartmentMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/EmployeeCustomVoMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/EmployeeMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/KeyValueMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/MonthlyAttendanceCustomVoMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/MonthlyAttendanceMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/PositionMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/RankBonusMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/SalaryMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/SystemManagerMapper.xml], file [/home/voper/Desktop/ssm_esms/target/classes/mappers/WorkingYearsBonusMapper.xml]]
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;sqlSessionFactory&apos;
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po
+DEBUG [main] - Reader entry: Department.class
+DEBUG [main] - Reader entry: Employee.class
+DEBUG [main] - Reader entry: KeyValue.class
+DEBUG [main] - Reader entry: MonthlyAttendance.class
+DEBUG [main] - Reader entry: Position.class
+DEBUG [main] - Reader entry: RankBonus.class
+DEBUG [main] - Reader entry: Salary.class
+DEBUG [main] - Reader entry: SystemManager.class
+DEBUG [main] - Reader entry: WorkingYearsBonus.class
+DEBUG [main] - Listing file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Department.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Department.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;J
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Employee.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Employee.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;�
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/KeyValue.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/KeyValue.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;I
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/MonthlyAttendance.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/MonthlyAttendance.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;�
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Position.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Position.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;T
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/RankBonus.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/RankBonus.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;C
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Salary.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/Salary.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#1;&amp;#8;
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/SystemManager.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/SystemManager.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;C
+DEBUG [main] - Find JAR URL: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/WorkingYearsBonus.class
+DEBUG [main] - Not a JAR: file:/home/voper/Desktop/ssm_esms/target/classes/com/esms/po/WorkingYearsBonus.class
+DEBUG [main] - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&lt;
+DEBUG [main] - Checking to see if class com.esms.po.Department matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.Employee matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.KeyValue matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.MonthlyAttendance matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.Position matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.RankBonus matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.Salary matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.SystemManager matches criteria [is assignable to Object]
+DEBUG [main] - Checking to see if class com.esms.po.WorkingYearsBonus matches criteria [is assignable to Object]
+DEBUG [main] - Parsed configuration file: &apos;class path resource [mybatis-config.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/DepartmentMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/EmployeeCustomVoMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/EmployeeMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/KeyValueMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/MonthlyAttendanceCustomVoMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/MonthlyAttendanceMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/PositionMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/RankBonusMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/SalaryMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/SystemManagerMapper.xml]&apos;
+DEBUG [main] - Parsed mapper file: &apos;file [/home/voper/Desktop/ssm_esms/target/classes/mappers/WorkingYearsBonusMapper.xml]&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;departmentServiceImpl&apos; to bean named &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;txAdvice&apos;
+DEBUG [main] - Creating instance of bean &apos;txAdvice&apos;
+DEBUG [main] - Eagerly caching bean &apos;txAdvice&apos; to allow for resolving potential circular references
+DEBUG [main] - Creating shared instance of singleton bean &apos;transactionManager&apos;
+DEBUG [main] - Creating instance of bean &apos;transactionManager&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;transactionManager&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;pooledDataSource&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;transactionManager&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;transactionManager&apos;
+DEBUG [main] - Creating instance of bean &apos;(inner bean)#1cbb3d3b&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Adding transactional method [get*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Adding transactional method [list*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Adding transactional method [find*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Adding transactional method [query*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Adding transactional method [count*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG [main] - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG [main] - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG [main] - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG [main] - Adding transactional method [remove*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG [main] - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;(inner bean)#1cbb3d3b&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;txAdvice&apos;
+DEBUG [main] - Finished creating instance of bean &apos;txAdvice&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;departmentServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.DepartmentServiceImpl@529cfee5]
+DEBUG [main] - Finished creating instance of bean &apos;departmentServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;downloadExcelServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;downloadExcelServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.DownloadExcelServiceImpl]: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.DownloadExcelServiceImpl.salaryMapper
+DEBUG [main] - Eagerly caching bean &apos;downloadExcelServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;downloadExcelServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.DownloadExcelServiceImpl.salaryMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;salaryMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;downloadExcelServiceImpl&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;downloadExcelServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.DownloadExcelServiceImpl@319854f0]
+DEBUG [main] - Finished creating instance of bean &apos;downloadExcelServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;echartsServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;echartsServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.EchartsServiceImpl]: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.EchartsServiceImpl.departmentMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.EchartsServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.EchartsServiceImpl.employeeMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.EchartsServiceImpl]: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.EchartsServiceImpl.salaryMapper
+DEBUG [main] - Eagerly caching bean &apos;echartsServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;echartsServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.EchartsServiceImpl.departmentMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;departmentMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;echartsServiceImpl&apos; to bean named &apos;departmentMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;echartsServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.EchartsServiceImpl.employeeMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;employeeMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;echartsServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;echartsServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.EchartsServiceImpl.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;echartsServiceImpl&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;echartsServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.EchartsServiceImpl@4af46df3]
+DEBUG [main] - Finished creating instance of bean &apos;echartsServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;employeeServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;employeeServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.EmployeeServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.EmployeeServiceImpl.employeeMapper
+DEBUG [main] - Eagerly caching bean &apos;employeeServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;employeeServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.EmployeeServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;employeeServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;employeeServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.EmployeeServiceImpl@af78c87]
+DEBUG [main] - Finished creating instance of bean &apos;employeeServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;importDataServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;importDataServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.ImportDataServiceImpl]: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.ImportDataServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.ImportDataServiceImpl]: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.ImportDataServiceImpl.salaryMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.ImportDataServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.ImportDataServiceImpl.employeeMapper
+DEBUG [main] - Eagerly caching bean &apos;importDataServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;importDataServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.ImportDataServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;monthlyAttendanceMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;importDataServiceImpl&apos; to bean named &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;importDataServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.ImportDataServiceImpl.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;importDataServiceImpl&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;importDataServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.ImportDataServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;importDataServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;importDataServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.ImportDataServiceImpl@353efdbf]
+DEBUG [main] - Finished creating instance of bean &apos;importDataServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;keyValueServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;keyValueServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.KeyValueServiceImpl]: AutowiredFieldElement for private com.esms.dao.KeyValueMapper com.esms.service.impl.KeyValueServiceImpl.keyValueMapper
+DEBUG [main] - Eagerly caching bean &apos;keyValueServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;keyValueServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.KeyValueMapper com.esms.service.impl.KeyValueServiceImpl.keyValueMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;keyValueMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;keyValueMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;keyValueMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;keyValueMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;keyValueMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;keyValueServiceImpl&apos; to bean named &apos;keyValueMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;keyValueServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.KeyValueServiceImpl@8c46918]
+DEBUG [main] - Finished creating instance of bean &apos;keyValueServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;loginServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;loginServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.LoginServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.LoginServiceImpl.employeeMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.LoginServiceImpl]: AutowiredFieldElement for private com.esms.dao.SystemManagerMapper com.esms.service.impl.LoginServiceImpl.systemManagerMapper
+DEBUG [main] - Eagerly caching bean &apos;loginServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;loginServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.LoginServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;loginServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;loginServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SystemManagerMapper com.esms.service.impl.LoginServiceImpl.systemManagerMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;systemManagerMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;systemManagerMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;systemManagerMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;systemManagerMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;systemManagerMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;loginServiceImpl&apos; to bean named &apos;systemManagerMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;loginServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.LoginServiceImpl@f2e4acf]
+DEBUG [main] - Finished creating instance of bean &apos;loginServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;monthlyAttendanceServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;monthlyAttendanceServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.MonthlyAttendanceServiceImpl]: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.MonthlyAttendanceServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Eagerly caching bean &apos;monthlyAttendanceServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;monthlyAttendanceServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.MonthlyAttendanceServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;monthlyAttendanceServiceImpl&apos; to bean named &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;monthlyAttendanceServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.MonthlyAttendanceServiceImpl@5eb97ced]
+DEBUG [main] - Finished creating instance of bean &apos;monthlyAttendanceServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;positionServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;positionServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.PositionServiceImpl]: AutowiredFieldElement for public com.esms.dao.PositionMapper com.esms.service.impl.PositionServiceImpl.positionMapper
+DEBUG [main] - Eagerly caching bean &apos;positionServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;positionServiceImpl&apos;: AutowiredFieldElement for public com.esms.dao.PositionMapper com.esms.service.impl.PositionServiceImpl.positionMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;positionMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;positionMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;positionMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;positionMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;positionMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;positionServiceImpl&apos; to bean named &apos;positionMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;positionServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.PositionServiceImpl@153f66e7]
+DEBUG [main] - Finished creating instance of bean &apos;positionServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;rankBonusService&apos;
+DEBUG [main] - Creating instance of bean &apos;rankBonusService&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.RankBonusServiceImpl]: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.RankBonusServiceImpl.rankBonusMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.RankBonusServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.RankBonusServiceImpl.employeeMapper
+DEBUG [main] - Eagerly caching bean &apos;rankBonusService&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;rankBonusService&apos;: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.RankBonusServiceImpl.rankBonusMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;rankBonusMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;rankBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;rankBonusService&apos; to bean named &apos;rankBonusMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;rankBonusService&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.RankBonusServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;rankBonusService&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;rankBonusService&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.RankBonusServiceImpl@566d0c69]
+DEBUG [main] - Finished creating instance of bean &apos;rankBonusService&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;salaryServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;salaryServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.SalaryServiceImpl.salaryMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.SalaryServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.SalaryServiceImpl.employeeMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.SalaryServiceImpl.rankBonusMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.PositionMapper com.esms.service.impl.SalaryServiceImpl.positionMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.WorkingYearsBonusMapper com.esms.service.impl.SalaryServiceImpl.workingYearsBonusMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.KeyValueMapper com.esms.service.impl.SalaryServiceImpl.keyValueMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.SalaryServiceImpl]: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.SalaryServiceImpl.departmentMapper
+DEBUG [main] - Eagerly caching bean &apos;salaryServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.SalaryServiceImpl.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.service.impl.SalaryServiceImpl.monthlyAttendanceMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.SalaryServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.SalaryServiceImpl.rankBonusMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;rankBonusMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.PositionMapper com.esms.service.impl.SalaryServiceImpl.positionMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;positionMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;positionMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.WorkingYearsBonusMapper com.esms.service.impl.SalaryServiceImpl.workingYearsBonusMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;workingYearsBonusMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.KeyValueMapper com.esms.service.impl.SalaryServiceImpl.keyValueMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;keyValueMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;keyValueMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;salaryServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.SalaryServiceImpl.departmentMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;departmentMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;salaryServiceImpl&apos; to bean named &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;salaryServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.SalaryServiceImpl@3e850122]
+DEBUG [main] - Finished creating instance of bean &apos;salaryServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;userInforServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;userInforServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.SystemManagerMapper com.esms.service.impl.UserInforServiceImpl.systemManagerMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.UserInforServiceImpl.employeeMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.UserInforServiceImpl.rankBonusMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.PositionMapper com.esms.service.impl.UserInforServiceImpl.positionMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.UserInforServiceImpl.departmentMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.EmployeeCustomVoMapper com.esms.service.impl.UserInforServiceImpl.employeeCustomVoMapper
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.UserInforServiceImpl]: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.UserInforServiceImpl.salaryMapper
+DEBUG [main] - Eagerly caching bean &apos;userInforServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SystemManagerMapper com.esms.service.impl.UserInforServiceImpl.systemManagerMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;systemManagerMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;systemManagerMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeMapper com.esms.service.impl.UserInforServiceImpl.employeeMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;employeeMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.RankBonusMapper com.esms.service.impl.UserInforServiceImpl.rankBonusMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;rankBonusMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.PositionMapper com.esms.service.impl.UserInforServiceImpl.positionMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;positionMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;positionMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.DepartmentMapper com.esms.service.impl.UserInforServiceImpl.departmentMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;departmentMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;departmentMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.EmployeeCustomVoMapper com.esms.service.impl.UserInforServiceImpl.employeeCustomVoMapper
+DEBUG [main] - Creating shared instance of singleton bean &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;employeeCustomVoMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;userInforServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.service.impl.UserInforServiceImpl.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;userInforServiceImpl&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;userInforServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.UserInforServiceImpl@c27d163]
+DEBUG [main] - Finished creating instance of bean &apos;userInforServiceImpl&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;workYearServiceImpl&apos;
+DEBUG [main] - Creating instance of bean &apos;workYearServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Registered injected element on class [com.esms.service.impl.WorkYearServiceImpl]: AutowiredFieldElement for private com.esms.dao.WorkingYearsBonusMapper com.esms.service.impl.WorkYearServiceImpl.workingYearsBonusMapper
+DEBUG [main] - Eagerly caching bean &apos;workYearServiceImpl&apos; to allow for resolving potential circular references
+DEBUG [main] - Processing injected element of bean &apos;workYearServiceImpl&apos;: AutowiredFieldElement for private com.esms.dao.WorkingYearsBonusMapper com.esms.service.impl.WorkYearServiceImpl.workingYearsBonusMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;workYearServiceImpl&apos; to bean named &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating implicit proxy for bean &apos;workYearServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+DEBUG [main] - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.esms.service.impl.WorkYearServiceImpl@78faea5f]
+DEBUG [main] - Finished creating instance of bean &apos;workYearServiceImpl&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+DEBUG [main] - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerFactory&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;pooledDataSource&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;sqlSession&apos;
+DEBUG [main] - Creating instance of bean &apos;sqlSession&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Eagerly caching bean &apos;sqlSession&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;sqlSession&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;transactionManager&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;txAdvice&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;com.esms.exception.CustomExceptionResolver#0&apos;
+DEBUG [main] - Creating instance of bean &apos;com.esms.exception.CustomExceptionResolver#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;com.esms.exception.CustomExceptionResolver#0&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;com.esms.exception.CustomExceptionResolver#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;departmentMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;employeeMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;keyValueMapper&apos;
+DEBUG [main] - Creating shared instance of singleton bean &apos;monthlyAttendanceCustomVoMapper&apos;
+DEBUG [main] - Creating instance of bean &apos;monthlyAttendanceCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Eagerly caching bean &apos;monthlyAttendanceCustomVoMapper&apos; to allow for resolving potential circular references
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Invoking afterPropertiesSet() on bean with name &apos;monthlyAttendanceCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Finished creating instance of bean &apos;monthlyAttendanceCustomVoMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;positionMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;rankBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;systemManagerMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;workingYearsBonusMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+DEBUG [main] - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@70abf9b0]
+DEBUG [main] - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+DEBUG [main] - Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source
+DEBUG [main] - Storing ApplicationContext in cache under key [[MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+DEBUG [main] - Spring test ApplicationContext cache statistics: [DefaultContextCache@588ffeb size = 2, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 2]
+DEBUG [main] - Processing injected element of bean &apos;com.esms.utils.JXLUtilsTest&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.utils.JXLUtilsTest.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;com.esms.utils.JXLUtilsTest&apos; to bean named &apos;salaryMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;com.esms.utils.JXLUtilsTest&apos;: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.utils.JXLUtilsTest.monthlyAttendanceMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Autowiring by type from bean name &apos;com.esms.utils.JXLUtilsTest&apos; to bean named &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+DEBUG [main] - Before test method: context [DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@7051777c, testMethod = readMonthlyAttendanceTest@JXLUtilsTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG [main] - After test method: context [DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@7051777c, testMethod = readMonthlyAttendanceTest@JXLUtilsTest, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+    <system-err>java.io.FileNotFoundException: D:/ESMSexcel/Monthly_attendance_table/考勤表_2018-7.xls (没有那个文件或目录)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at jxl.Workbook.getWorkbook(Workbook.java:213)
+	at jxl.Workbook.getWorkbook(Workbook.java:198)
+	at com.esms.utils.JXLUtils.readMonthlyAttendanceTable(JXLUtils.java:27)
+	at com.esms.utils.JXLUtilsTest.readMonthlyAttendanceTest(JXLUtilsTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+  <testcase classname="com.esms.utils.JXLUtilsTest" name="readRessiueTest" time="0.022">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.esms.utils.JXLUtils.readReissueTable(JXLUtils.java:129)
+	at com.esms.utils.JXLUtilsTest.readRessiueTest(JXLUtilsTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>DEBUG [main] - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.esms.utils.JXLUtilsTest]
+DEBUG [main] - Performing dependency injection for test context [[DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@2b8d084, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+DEBUG [main] - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]
+DEBUG [main] - Spring test ApplicationContext cache statistics: [DefaultContextCache@588ffeb size = 2, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 2]
+DEBUG [main] - Processing injected element of bean &apos;com.esms.utils.JXLUtilsTest&apos;: AutowiredFieldElement for private com.esms.dao.SalaryMapper com.esms.utils.JXLUtilsTest.salaryMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;salaryMapper&apos;
+DEBUG [main] - Processing injected element of bean &apos;com.esms.utils.JXLUtilsTest&apos;: AutowiredFieldElement for private com.esms.dao.MonthlyAttendanceMapper com.esms.utils.JXLUtilsTest.monthlyAttendanceMapper
+DEBUG [main] - Returning cached instance of singleton bean &apos;monthlyAttendanceMapper&apos;
+DEBUG [main] - Before test method: context [DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@2b8d084, testMethod = readRessiueTest@JXLUtilsTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG [main] - After test method: context [DefaultTestContext@68809cc7 testClass = JXLUtilsTest, testInstance = com.esms.utils.JXLUtilsTest@2b8d084, testMethod = readRessiueTest@JXLUtilsTest, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@703feacd testClass = JXLUtilsTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+</system-out>
+    <system-err>java.io.FileNotFoundException: D:/ESMSexcel/monthly_reissue_table/补发金额表_2018-7.xls (没有那个文件或目录)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at jxl.Workbook.getWorkbook(Workbook.java:213)
+	at jxl.Workbook.getWorkbook(Workbook.java:198)
+	at com.esms.utils.JXLUtils.readReissueTable(JXLUtils.java:122)
+	at com.esms.utils.JXLUtilsTest.readRessiueTest(JXLUtilsTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+</testsuite>
